@@ -1,0 +1,11 @@
+<div style="outline: 1px solid #aaa; padding: 20px; background: lightgreen;">
+  <h1>{{title}}</h1>
+
+  <ul>
+    <li ng-repeat="tab in page2TabList">
+      <a ui-sref="root.page2.tab({ tabId: tab.id })">tabId {{ tab.id }}</a>
+    </li>
+  </ul>
+
+  <div ui-view></div>
+</div>
